@@ -1,0 +1,34 @@
+body { font-family: Arial; }
+.menu, .menu ul, .menu li { padding: 0; margin: 0; }
+
+
+.menu li{
+    list-style: none;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    padding: 0 20px;
+    background-color: darkorange;
+    line-height: 30px;
+    cursor: pointer;  /* chuyển biểu tượng con trỏ thành hình bàn tay */
+}
+
+.menu li a { text-decoration: none; color: white; }
+.menu li:hover { background-color: red; }
+
+
+.menu ul ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    visibility: hidden;
+}
+        
+.menu ul li:hover ul{
+      visibility: visible;
+      z-index: 999;
+}
+
+.menu ul li:hover ul li:hover{
+    background-color: darkslateblue;
+ }
